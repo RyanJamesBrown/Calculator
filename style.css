@@ -1,7 +1,9 @@
 #screen{
     background-color: lightgray;
     border-radius: 5px;
-    text-justify: right;
+    text-align: right;
+    padding-right: 10px;
+    height:20px;
 }
 
 #calculatorItself{
@@ -15,6 +17,12 @@
 #topButtons{
     display:flex;
     justify-content: stretch;
+}
+
+.gridButtons{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:5px;
 }
 
 button {
