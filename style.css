@@ -1,0 +1,23 @@
+#screen{
+    background-color: lightgray;
+    border-radius: 5px;
+    text-justify: right;
+}
+
+#calculatorItself{
+    width:400px;
+    Height:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#topButtons{
+    display:flex;
+    justify-content: stretch;
+}
+
+button {
+    flex: 1 1 auto;
+    margin:5px;
+}
