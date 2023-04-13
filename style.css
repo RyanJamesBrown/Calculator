@@ -1,9 +1,12 @@
 #screen{
     background-color: lightgray;
     border-radius: 5px;
+    font-size: larger;
     text-align: right;
+    justify-content: center;
     padding-right: 10px;
-    height:20px;
+    height:30px;
+    line-height: 30px;
 }
 
 #calculatorItself{
@@ -11,7 +14,7 @@
     Height:600px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 #topButtons{
@@ -25,7 +28,17 @@
     grid-gap:5px;
 }
 
+.opButton{
+    background-color: cadetblue;
+}
+
 button {
     flex: 1 1 auto;
     margin:5px;
+    transition-duration: .2s;
+}
+
+button:hover{
+    background-color:whitesmoke;
+    color:indigo
 }

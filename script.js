@@ -90,10 +90,13 @@ function operate(a,b,o){
         screenDisplay = Number(a) - Number(b);
     }
     else if(o == "*"){
-        screenDisplay = Number(a) - Number(b);
+        screenDisplay = Number(a) * Number(b);
     }
     else if(o == "-"){
-        screenDisplay = Number(a) - Number(b);
+        if(b == 0){
+            screenDisplay = 666;
+        }
+        else{screenDisplay = Number(a) / Number(b);}
     }
     screen.innerHTML = screenDisplay;
     operand = '';
