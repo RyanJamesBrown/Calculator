@@ -1,3 +1,31 @@
+let submitButon = document.getElementById("submitButton");//document.querySelector('.submitButton');
+
+
+submitButon.addEventListener('click', function1(), false);
+
+
+function function1 (){
+    let passwordField = document.getElementById("password").value;
+    let confirmPasswordField = document.getElementById("confirm-password").value;
+    if(passwordField === confirmPasswordField){
+        console.log("they match")
+    }
+    else{
+    console.log("someone clicked!");
+    alert("Derpy Derp I chime in every time!");
+    }
+}
+
+/*.addEventListener('submit', (e)=>{
+    console.log("someone clicked the button");
+    if(passwordField != confirmPasswordField){
+        alert("Derp your passwords don't match!")
+    }
+}) */
+
+
+
+/*
 let screenDisplay = 0;
 let firstOp = 0;
 let secondOp = 0;
@@ -102,3 +130,4 @@ function operate(a,b,o){
     operand = '';
 }
 screen.innerHTML = screenDisplay;
+*/
